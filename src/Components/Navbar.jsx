@@ -14,7 +14,7 @@ function Navbar() {
       <div className="max-w-screen-xl flex items-center justify-between mx-auto px-4 py-2 h-20">
         <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse" onClick={() => setShowOptions(false)}>
           <img src="src/Asset/white-logo.png" className="w-12 h-12" alt="NatureMark Systems Logo"/>
-          <span className="text-xl md:text-3xl font-bold text-white transition duration-300 ease-in-out hidden md:flex">
+          <span className="text-xl md:text-3xl font-semibold text-white transition duration-300 ease-in-out hidden md:flex">
             NatureMark Systems
           </span>
         </Link>
