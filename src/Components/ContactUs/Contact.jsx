@@ -2,6 +2,8 @@ import { BiSolidEnvelope } from "react-icons/bi";
 import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { IoCallSharp } from "react-icons/io5";
+import { FaWhatsapp } from "react-icons/fa";
+
 import Form from "./Form";
 import Location from "./Location";
 import { Link } from "react-router-dom";
@@ -16,8 +18,8 @@ function Contact() {
         <div className="w-1/2 flex flex-col gap-y-4 text-start px-16 max-md:px-0 max-mds:mx-auto">
           <div className="text-4xl ">Contact Us</div>
           <div>Better yet, see us in person!</div>
-          <Link className="border-2 w-fit px-5 py-1 bg-green-200 rounded-3xl">
-            Message us on WhatsApp
+          <Link className="border-2 w-fit px-5 py-1 flex gap-x-1 bg-green-200 rounded-3xl">
+            <FaWhatsapp className="m-auto" /> Message us on WhatsApp
           </Link>
           <div className="font-medium">NatureMark Systems</div>
           <div>Mangaluru, Karnataka, india</div>
