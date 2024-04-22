@@ -55,6 +55,11 @@ function Form() {
       >
         Send
       </button>
+      <div className="flex justify-around w-3/12 mt-12 mx-auto scale-150">
+        <FaLinkedin className="text-white" />
+        <FaFacebook className="text-white" />
+        <FaGithub className="text-white" />
+      </div>
     </form>
   );
 }
