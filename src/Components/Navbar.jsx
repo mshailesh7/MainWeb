@@ -23,7 +23,7 @@ function Navbar() {
               className="w-12 h-12"
               alt="NatureMark Systems Logo"
             />
-            <span className="text-xl md:text-3xl font-bold text-white transition duration-300 ease-in-out max-mdmp:hidden">
+            <span className="text-xl md:text-3xl font-bold text-white transition duration-300 ease-in-out max-lgp:hidden">
               NatureMark Systems
             </span>
           </Link>
@@ -36,13 +36,20 @@ function Navbar() {
           } flex-col md:flex-row items-center md:space-x-8 w-full md:flex md:w-auto transition-all ease-in-out duration-300`}
         >
           <Link
-            to="/signup"
+            to="/"
             className="py-2 px-4 text-white font-bold hover:bg-green-700 rounded transition duration-300 ease-in-out"
             onClick={() => setShowOptions(false)}
           >
-            Sign Up
+            Home
           </Link>
           <Dropdown />
+          <Link
+            to="/News_Blogs"
+            className="py-2 px-4 text-white font-bold hover:bg-green-700 rounded transition duration-300 ease-in-out"
+            onClick={() => setShowOptions(false)}
+          >
+            News & Blogs
+          </Link>
           <Link
             to="/aboutus"
             className="py-2 px-4 text-white font-bold hover:bg-green-700 rounded transition duration-300 ease-in-out"
