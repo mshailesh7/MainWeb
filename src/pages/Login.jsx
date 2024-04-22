@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { IoEyeSharp, IoEyeOffSharp } from "react-icons/io5"; // Changed to maintain icon consistency
+import { IoEyeSharp, IoEyeOffSharp } from "react-icons/io5"; // Icons for visibility toggle
 
 function SignIn() {
   const [email, setEmail] = useState('');
@@ -8,9 +8,9 @@ function SignIn() {
   const [showPassword, setShowPassword] = useState(false);
 
   return (
-    <div className="flex justify-center items-center h-screen w-full bg-neutral-100">
-      <div className="bg-white flex flex-col sm:flex-row border-2 sm:max-w-screen-xl rounded-3xl shadow-2xl overflow-hidden">
-        <div className="flex-grow p-8 flex flex-col justify-center"> {/* Adjusted to use flex-grow for consistent sizing */}
+    <div className="flex justify-center items-center h-screen w-full bg-white">
+      <div className="bg-green-100 flex flex-col sm:flex-row border-2 sm:max-w-screen-xl rounded-3xl shadow-2xl overflow-hidden">
+        <div className="flex-grow p-8 flex flex-col justify-center">
           <h2 className="text-center text-3xl font-extrabold text-gray-900 mb-6">
             Sign In to Your Account
           </h2>
@@ -40,7 +40,7 @@ function SignIn() {
                       onClick={() => setShowPassword(!showPassword)}
                     />
                   ) : (
-                    <IoEyeOffSharp // Changed for consistency in icon appearance
+                    <IoEyeOffSharp
                       className="text-xl"
                       onClick={() => setShowPassword(!showPassword)}
                     />
@@ -66,19 +66,15 @@ function SignIn() {
             >
               Sign In
             </button>
+            <div className="mt-6 text-center">
+              <p className="text-sm text-gray-700">
+                Don't have an account?{' '}
+                <Link to="/signup" className="text-green-500 hover:text-green-500">
+                  Sign up here
+                </Link>
+              </p>
+            </div>
           </form>
-        </div>
-        <div className="flex-grow bg-gradient-to-br from-green-500 to-green-900 text-white flex flex-col items-center justify-center p-8 space-y-6"> {/* Consistent flex-grow usage */}
-          <div className="text-3xl font-bold">
-            New to NatureMark Systems?
-          </div>
-          <div>Join us today.</div>
-          <Link
-            to="/signup"
-            className="bg-black text-white font-bold py-2 px-4 rounded-full hover:bg-gray-900"
-          >
-            Sign Up
-          </Link>
         </div>
       </div>
     </div>

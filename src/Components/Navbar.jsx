@@ -14,7 +14,7 @@ function Navbar() {
       <div className="max-w-screen-xl flex items-center justify-between mx-auto px-4 py-2 h-20">
         <div className="flex">
           <Link
-            to="/"
+            to="/login"
             className="flex items-center space-x-3 rtl:space-x-reverse"
             onClick={() => setShowOptions(false)}
           >
@@ -36,7 +36,7 @@ function Navbar() {
           } flex-col md:flex-row items-center md:space-x-8 w-full md:flex md:w-auto transition-all ease-in-out duration-300`}
         >
           <Link
-            to="/"
+            to="/login"
             className="py-2 px-4 text-white font-bold hover:bg-green-700 rounded transition duration-300 ease-in-out"
             onClick={() => setShowOptions(false)}
           >

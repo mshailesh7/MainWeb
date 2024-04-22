@@ -13,7 +13,7 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <a
-                  href="#"
+                  href="/Contact"
                   className="hover:text-green-300 transition-colors duration-300"
                 >
                   Contact Us
@@ -37,7 +37,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="/signup"
                   className="hover:text-green-300 transition-colors duration-300"
                 >
                   Sign Up
