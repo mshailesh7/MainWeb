@@ -20,7 +20,7 @@ export default function ContactUs() {
         <div className=" w-4/12 max-md:w-7/12 max-md:mx-auto max-sm:w-11/12">
           <Form />
         </div>
-        <div className=" w-4/12  max-md:w-7/12 max-md:mx-auto max-sm:w-11/12 py-5">
+        <div className=" w-96">
           <FAQ />
         </div>
       </div>

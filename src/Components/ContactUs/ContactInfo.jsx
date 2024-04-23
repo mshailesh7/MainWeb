@@ -2,7 +2,7 @@ import { BiSolidEnvelope } from "react-icons/bi";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { IoCallSharp } from "react-icons/io5";
-
+import SocialLinks from "./SocialLinks";
 export default function ContactInfo() {
   return (
     <div className="p-11 md:w-1/2 bg-green-100 rounded-lg shadow-lg flex flex-col items-center justify-center text-center max-md:w-full">
@@ -24,10 +24,11 @@ export default function ContactInfo() {
         <IoCallSharp className="text-xl" />
         <span className="underline">+91 9833363372, +91 7204141484</span>
       </div>
-      <div className="flex gap-x-2 items-center mb-4 justify-center">
+      <div className="flex  gap-x-2 items-center mb-4 justify-center">
         <BiSolidEnvelope className="text-xl" />
         <span>naturemarksystems@gmail.com</span>
       </div>
+      <SocialLinks />
       <a
         href="https://wa.me/919833363372"
         className="mt-4 inline-block bg-green-600 hover:bg-green-700 text-white font-bold rounded-lg px-5 py-2 transition duration-300"

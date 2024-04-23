@@ -2,7 +2,7 @@ import { useState } from "react";
 import Questions_Answers from "./Questions_Answers";
 function FAQ() {
   return (
-    <div className="bg-blue-200 overflow-y-scroll" style={{ height: "415px" }}>
+    <div className="bg-blue-200 overflow-y-scroll" style={{ height: "380px" }}>
       <h1 className="text-center text-3xl">Frequestly Asked Questions</h1>
       <div>
         <Questions_Answers
