@@ -3,7 +3,7 @@ import React, { useState } from "react";
 function Questions_Answers({ Question, Answer }) {
   const [Show, SetShow] = useState(false);
   return (
-    <div className="mt-3">
+    <div className="mt-3 ">
       <hr className="border-2" />
       <div className="p-4">
         <div>

@@ -14,14 +14,17 @@ export default {
       // => @media (min-width: 640px) { ... }
       sm: "640px",
       md: "768px",
+      mds: "888px",
       mdm: "976px",
-      mdmp: "893px",
+      mdmp: "903px",
       // => @media (min-width: 768px) { ... }
 
       lg: "1024px",
+      lgp: "1080px",
       // => @media (min-width: 1024px) { ... }
-
+      xls: "1228px",
       xl: "1280px",
+      xxl: "1337px",
       // => @media (min-width: 1280px) { ... }
 
       "2xl": "1536px",
