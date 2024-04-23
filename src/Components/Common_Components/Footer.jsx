@@ -1,7 +1,6 @@
 import { IoMdMail } from "react-icons/io";
 import { IoLocationSharp } from "react-icons/io5";
 import { FaPhoneAlt } from "react-icons/fa";
-import whitelogo from "../Asset/white-logo.png";
 
 export default function Footer() {
   return (
@@ -83,9 +82,9 @@ export default function Footer() {
             </ul>
           </div>
           <div className="flex flex-col items-center sm:items-start">
-            <div className="mb-6">
+            <div className="mb-6 flex gap-x-2 my-auto">
               <img
-                src={whitelogo}
+                src={`src/Asset/white-logo.png`}
                 alt="NatureMark Systems Logo"
                 className="h-8 mx-auto sm:mx-0"
               />

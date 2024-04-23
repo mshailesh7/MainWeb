@@ -1,8 +1,12 @@
 import React from "react";
 
-const TextImageComponent = ({ text, image, imageFirst }) => {
+const TextImageComponent = ({ text, image, imageFirst, index }) => {
   return (
-    <div className="section-container flex flex-col md:flex-row  overflow-hidden shadow-lg rounded-lg border-2">
+    <div
+      className={`"section-container border-green-500 flex  flex-col md:flex-row  overflow-hidden shadow-lg rounded-lg" ${
+        index % 2 == 0 ? "border-r-4 " : "border-l-4 "
+      }}`}
+    >
       <div
         className={`image md:w-1/2 ${
           imageFirst ? "md:order-1" : "md:order-2"
