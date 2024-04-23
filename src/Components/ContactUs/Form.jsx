@@ -2,7 +2,7 @@ import InputField from "./InputFields";
 import SocialLinks from "./SocialLinks";
 export default function Form() {
   return (
-    <form className="w-full max-w-4xl p-5 bg-green-100 rounded-lg shadow-lg text-gray-900 my-6 border-2 border-green-800">
+    <form className=" p-5 bg-green-100 rounded-lg shadow-lg text-gray-900 my-6 border-2 border-green-800">
       <InputField label="Name" type="text" />
       <InputField label="Email address" type="email" />
       <InputField label="Message" type="text" inputClass="h-24" />
