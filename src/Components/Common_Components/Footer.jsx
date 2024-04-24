@@ -113,9 +113,9 @@ export default function Footer() {
                 <FaPhoneAlt className="text-lg" />
                 <a
                   href="#"
-                  className="underline hover:text-green-300 transition-colors duration-300"
+                  className=" hover:text-green-300 transition-colors duration-300"
                 >
-                  +91 9833363372
+                  +91 9833363372/+91 7204141484
                 </a>
               </li>
             </ul>

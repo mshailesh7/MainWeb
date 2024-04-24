@@ -84,13 +84,6 @@ function Navbar() {
           >
             Contact
           </Link>
-          <Link
-            to="/Signup"
-            className="py-2 px-4 text-white font-bold hover:bg-green-700 rounded transition duration-300 ease-in-out"
-            onClick={() => setShowOptions(false)}
-          >
-            Sign up
-          </Link>
         </div>
       </div>
     </nav>
