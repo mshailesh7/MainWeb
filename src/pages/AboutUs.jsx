@@ -6,7 +6,9 @@ const AboutUs = () => {
   return (
     <div className="m-16 mx-auto mt-36 w-9/12 flex flex-col space-y-8">
       <h1 className="text-4xl md:text-4xl text-center font-semibold my-8">
-        <span className="">ABOUT NATUREMARK SYSTEMS!</span>
+        <span className="" draggable>
+          ABOUT NATUREMARK SYSTEMS!
+        </span>
       </h1>
       <div className="flex flex-col gap-y-6">
         {data.sections.map((section, index) => (
