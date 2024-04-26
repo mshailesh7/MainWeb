@@ -3,7 +3,7 @@ import React from "react";
 const TextImageComponent = ({ text, image, imageFirst, index }) => {
   return (
     <div
-      className={`"section-container border-green-500 flex  flex-col md:flex-row  overflow-hidden shadow-lg rounded-lg" ${
+      className={`"section-container border-green-500 flex  flex-col md:flex-row overflow-hidden shadow-lg rounded-lg" ${
         index % 2 == 0 ? "border-r-4 " : "border-l-4 "
       }}`}
     >
@@ -18,7 +18,7 @@ const TextImageComponent = ({ text, image, imageFirst, index }) => {
         {/* Empty div used for background image */}
       </div>
       <div
-        className={`content md:w-1/2 flex flex-col justify-center p-4 ${
+        className={`content md:w-1/2 flex flex-col justify-center p-10 ${
           imageFirst ? "md:order-2" : "md:order-1"
         } bg-white rounded-lg`}
       >
