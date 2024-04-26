@@ -3,7 +3,7 @@ function Header() {
     <div
       className=" bg-cover w-screen text-center mt-20 flex justify-center flex-col text-green-800 gap-y-20"
       style={{
-        backgroundImage: "url('src/Asset/lushforest.png')",
+        backgroundImage: "url('src/Asset/MarketPlaceHomeLanding.png')",
         height: "50rem",
       }}
     >
@@ -11,7 +11,9 @@ function Header() {
         Welcome To NatureMark Systems MarketPlace
       </h1>
       <p className="text-blue-800 font-bold w-9/12 mx-auto">
-      Explore our market-leading solutions that empower sustainable growth with compliance simplified. Discover the future of environmental compliance today.
+        Explore our market-leading solutions that empower sustainable growth
+        with compliance simplified. Discover the future of environmental
+        compliance today.
       </p>
       <button
         type="button"

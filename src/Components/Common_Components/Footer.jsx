@@ -4,7 +4,7 @@ import { FaPhoneAlt } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="bg-green-800 text-white mt-20">
+    <footer className="bg-green-800 text-white">
       <div className="mx-auto w-full max-w-screen-xl p-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 text-center sm:text-left">
           <div>
