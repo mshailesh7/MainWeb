@@ -11,12 +11,7 @@ function Header() {
         Welcome To NatureMark Systems MarketPlace
       </h1>
       <p className="text-blue-800 font-bold w-9/12 mx-auto">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
-        officiis atque odio libero harum, veritatis sint sed exercitationem
-        ullam eaque vitae mollitia. Deserunt quibusdam repellendus assumenda
-        aliquid necessitatibus perspiciatis id, fugiat omnis incidunt inventore
-        illo in possimus at, vel adipisci quos repudiandae ipsa corrupti
-        praesentium totam dolores. At, perferendis mollitia.
+      Explore our market-leading solutions that empower sustainable growth with compliance simplified. Discover the future of environmental compliance today.
       </p>
       <button
         type="button"
