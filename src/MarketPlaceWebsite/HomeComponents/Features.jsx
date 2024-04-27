@@ -4,7 +4,7 @@ import Card from "./Card";
 function Features() {
   return (
     <div className="bg-gradient-to-br from-gray-300 to-green-200 py-12 px-4">
-      <h1 className="text-center text-6xl font-bold text-purple-700 my-10">
+      <h1 className="text-center text-6xl font-bold text--900 my-10">
         Key Features
       </h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-10 px-4">

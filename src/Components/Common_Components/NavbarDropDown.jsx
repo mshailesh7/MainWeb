@@ -31,6 +31,7 @@ export default function Example() {
               {({ active }) => (
                 <a
                   href="./marketplace"
+                  target=""
                   className={classNames(
                     active ? "bg-green-100 text-green-900" : "text-gray-900",
                     "block px-4 py-3 text-md"
