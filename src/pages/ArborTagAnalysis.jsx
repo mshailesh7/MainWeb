@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import TextImageComponent from "../Components/ArborTagAnalysis_Components/AirborTagAnalysis_TextImageComponent";
+import TextImageComponent from "../Components/ArborTagAnalysis_Components/ArborTagAnalysis_TextImageComponent";
 import ArBorTagAnalysis_Data from "./ArBorTagAnalysis_Data.json";
 import { FaMagnifyingGlass } from "react-icons/fa6";
 import { useState } from "react";
