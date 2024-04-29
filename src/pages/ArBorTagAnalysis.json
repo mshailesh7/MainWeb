@@ -1,0 +1,74 @@
+{
+  "sections": [
+    {
+      "title": "Average Width: ",
+      "image": "src/Asset/rs=w_600,h_600,cg_true_1.jpg",
+      "text": {
+        "title": "Average Width: ",
+        "paragraphs": [
+          "This analysis presents the average tree widths for each species. To calculate these averages, the total width of all trees within a species is divided by the number of trees, providing an estimated average width for each species.This allows us to understand how consistent the widths are for each species and visualise any outliers that are thicker or thinner than the rest."
+        ]
+      }
+    },
+    {
+      "title": "Average Height",
+      "image": "src/Asset/rs=w_600,h_600,cg_true_2.jpg",
+      "text": {
+        "title": "Carbon Sequestration Heatmap",
+        "paragraphs": [
+          "This analysis provides the average tree heights for each species. To calculate these averages, the total height of all trees within a species is divided by the number of trees, providing an estimated average height for each species. This allows us to understand how consistent the heights are for each species and visualise any outliers that are taller or shorter than the rest. "
+        ]
+      }
+    },
+    {
+      "title": "Species Diversity",
+      "image": "src/Asset/rs=w_600,h_451,cg_true_3.jpg",
+      "text": {
+        "title": "Species Distribution",
+        "paragraphs": [
+          "This visualization offers a detailed overview of the species examined, showing their relative proportions. Each species is represented by a unique colour, and the percentages displayed reflect each species' share of the total composition.This helps us better understand the frequency of certain species found and also helps us understand the number of native and exotic species present.  "
+        ]
+      }
+    },
+    {
+      "title": "Species Distribution",
+      "image": "src/Asset/rs=w_600,h_451,cg_true_4.jpg",
+      "text": {
+        "title": "Average Height",
+        "paragraphs": [
+          "This analysis displays the precise geographic coordinates for each tree species, with each species assigned a unique colour. Due to the exactness of the coordinates, some markers may overlap when trees are located in close proximity to one another.This helps us better understand the spread of certain species across a given area. This analysis also helps us understand the distribution of each species and how widely they are found within the region."
+        ]
+      }
+    },
+    {
+      "title": "Average Width",
+      "image": "src/Asset/rs=w_600,h_451,cg_true_5.jpg",
+      "text": {
+        "title": "Our Philosophy",
+        "paragraphs": [
+          "This graph depicts the average width of the trees for each of the species. The total width of the tree for each of the species is taken and divided by the total number of trees for that specific species to determine an average width estimate. It also shows the thickest and slimest tree."
+        ]
+      }
+    },
+    {
+      "title": "Carbon Sequestration",
+      "image": "src/Asset/rs=w_600,h_800,cg_true_6.jpg",
+      "text": {
+        "title": "Key Statistics",
+        "paragraphs": [
+          "This analysis uses a heatmap to depict the amount of carbon dioxide each tree can sequester, calculated using a scientific formula. Each tree's CO2 sequestration capability is represented by colour intensity on the heatmap; lighter colours indicate lower sequestration abilities, while darker colours denote higher efficiency in removing CO2 from the atmosphere.This helps us determine the types of trees that are best at sequestering carbon allowing us to further use these trees more frequently during plantation efforts. This analysis also helps us identify key spots within the given area that might need afforestation efforts to help improve carbon sequestration."
+        ]
+      }
+    },
+    {
+      "title": "Key Statistics",
+      "image": "src/Asset/rs=w_600,h_800,cg_true_6.jpg",
+      "text": {
+        "title": "Key Statistics",
+        "paragraphs": [
+          "This infographic delivers essential statistics from the dataset used in each analysis, such as tree height and width (measured in meters), and carbon sequestration (in kg/year). It provides a concise overview, allowing for a quick understanding of the critical insights derived from the comprehensive analysis."
+        ]
+      }
+    }
+  ]
+}

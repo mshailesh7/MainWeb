@@ -10,7 +10,7 @@ function Navbar() {
   };
 
   return (
-    <nav className="bg-green-800 fixed w-full z-20 top-0 border-b border-gray-200 dark:border-gray-600 shadow-md">
+    <nav className="bg-green-800 fixed w-full z-50 top-0 border-b border-gray-200 dark:border-gray-600 shadow-md">
       <div className="max-w-screen-xl flex items-center justify-between mx-auto px-4 py-2 h-20 max-mds:flex-col">
         <div className="max-mds:flex max-mds:w-full max-mds:h-full max-mds:justify-between">
           <Link

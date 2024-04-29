@@ -1,6 +1,5 @@
-import React from "react";
 import TextImageComponent from "../Components/AboutUs/TextImageComponent";
-import data from "./data.json";
+import data from "./AboutUsData.json";
 
 const AboutUs = () => {
   return (
