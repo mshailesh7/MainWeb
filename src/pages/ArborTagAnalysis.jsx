@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import TextImageComponent from "../Components/ArborTagAnalysis_Components/AirborTagAnalysis_TextImageComponent";
-import data from "./ArBorTagAnalysis.json";
+import ArBorTagAnalysis_Data from "./ArBorTagAnalysis_Data.json";
 import { FaMagnifyingGlass } from "react-icons/fa6";
 import { useState } from "react";
 
@@ -21,7 +21,7 @@ const AiborTagAnalysis = () => {
         </span>
       </h1>
       <div className="flex flex-col gap-y-10">
-        {data.sections.map((section, index) => (
+        {ArBorTagAnalysis_Data.sections.map((section, index) => (
           <div
             key={index}
             className={`transition duration-500 ease-in-out transform ${

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function UploadAnalysisForm() {
   return (
@@ -25,13 +26,13 @@ function UploadAnalysisForm() {
       >
         Upload
       </button>
-      <button
+      <Link
         type="submit"
-        onClick={() => SetShowForm(!ShowForm)}
-        className="w-full bg-green-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50"
+        to="/ArBorTagAnalysis"
+        className="w-full text-center bg-green-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50"
       >
         Back to Previous Page
-      </button>
+      </Link>
     </div>
   );
 }
