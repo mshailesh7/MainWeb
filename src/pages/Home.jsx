@@ -92,43 +92,42 @@ const Footer = () => (
 );
 
 const Home = () => (
-  <div className="flex flex-col">
+  <div className="flex flex-col min-h-screen">
     <div
-      className="relative text-center bg-cover bg-center min-h-[100vh]"
+      className="relative text-center bg-cover bg-center min-h-screen"
       style={{ backgroundImage: 'url("../src/Asset/MainHomeLanding.png")' }}
     >
-      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 p-4 md:p-10">
-        <div className="bg-black bg-opacity-80 p-6 md:p-12 rounded-lg shadow-xl">
-          <h1 className="text-4xl md:text-5xl text-white font-bold">
-            Environmental Audits Made Easy
-          </h1>
-          <p className="text-xl md:text-2xl text-white mt-4 md:mt-6">
-            We provide eco-friendly engineering solutions for sustainable
-            development.
-          </p>
-          <div className="mt-8 space-x-4 flex justify-center items-center">
-            {" "}
-            {/* Centering and adding space between buttons */}
-            <Link to="/login">
-              <button
-                className="bg-gradient-to-r from-red-600 to-red-800 hover:from-red-700 hover:to-red-900 text-white font-bold py-3 px-8 md:px-14 rounded-lg transition-all duration-300 ease-in-out shadow-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-50 flex items-center justify-center gap-2"
-                aria-label="Login for environmental audits"
-              >
-                <FaSignInAlt className="text-lg animate-bounce" />{" "}
-                {/* Icon for the login button */}
-                Login
-              </button>
-            </Link>
-            <Link to="/signup">
-              <button
-                className="bg-gradient-to-r from-green-600 to-green-800 hover:from-green-700 hover:to-green-900 text-white font-bold py-3 px-8 md:px-14 rounded-lg transition-all duration-300 ease-in-out shadow-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50 flex items-center justify-center gap-2"
-                aria-label="Signup for environmental audits"
-              >
-                <FaUserPlus className="text-lg animate-bounce" />{" "}
-                {/* Icon for the signup button */}
-                Signup
-              </button>
-            </Link>
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-gray-900 opacity-90">
+        {/* Text and button container */}
+        <div className="flex flex-col items-center justify-center min-h-screen">
+          <div className="p-4 ">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl text-white font-bold drop-shadow-lg">
+              Environmental Audits Made Easy
+            </h1>
+            <p className="text-xl md:text-2xl lg:text-3xl text-white mt-4 md:mt-6 drop-shadow-md">
+              We provide eco-friendly engineering solutions for sustainable
+              development.
+            </p>
+            <div className="mt-8 space-x-4 flex justify-center items-center">
+              <Link to="/login">
+                <button
+                  className="bg-gradient-to-r from-green-600 to-green-800 hover:from-green-700 hover:to-green-900 text-white font-bold py-3 px-8 md:px-14 rounded-lg transition-all duration-300 ease-in-out shadow-lg focus:outline-none focus:ring-4 focus:ring-green-500 focus:ring-opacity-50 flex items-center justify-center gap-2"
+                  aria-label="Login for environmental audits"
+                >
+                  <FaSignInAlt className="text-lg " />
+                  Login
+                </button>
+              </Link>
+              <Link to="/signup">
+                <button
+                  className="bg-gradient-to-r from-red-600 to-red-800 hover:from-red-700 hover:to-red-900 text-white font-bold py-3 px-8 md:px-14 rounded-lg transition-all duration-300 ease-in-out shadow-lg focus:outline-none focus:ring-4 focus:ring-red-500 focus:ring-opacity-50 flex items-center justify-center gap-2"
+                  aria-label="Signup for environmental audits"
+                >
+                  <FaUserPlus className="text-lg " />
+                  Signup
+                </button>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
