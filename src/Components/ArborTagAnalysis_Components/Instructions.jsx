@@ -6,7 +6,7 @@ import {
   MdIntegrationInstructions,
   MdOutlineIntegrationInstructions,
 } from "react-icons/md";
-export default function Instructions({ SetShowInstructions }) {
+export default function Instructions({ SetShowForm }) {
   return (
     <>
       <div className="flex flex-col my-36 w-5/12 max-md:w-11/12 max-mdm:w-10/12 max-sm:w-9/12 max-2xl:w-7/12 mx-auto h-screen gap-y-2">
@@ -110,7 +110,7 @@ export default function Instructions({ SetShowInstructions }) {
         </div>
         <Link
           to="#_"
-          onClick={() => SetShowInstructions(false)}
+          onClick={() => SetShowForm(true)}
           class="w-fit flex justify-center my-2 px-8 py-2 gap-x-2 mb-2 text-lg text-white bg-green-500 rounded-md hover:bg-green-400 mx-auto"
           data-primary="green-400"
           data-rounded="rounded-2xl"
