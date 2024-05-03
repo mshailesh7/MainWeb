@@ -21,13 +21,13 @@ function DataAnalysisForm() {
               htmlFor="fileInput"
               className="bg-green-500 text-white w-full text-center py-2 font-bold text-lg rounded-md cursor-pointer"
             >
-              Select or Drag your file
+              Select your file
             </label>
             <input
               accept=".csv"
               type="file"
               id="fileInput"
-              className="rounded-md "
+              className="hidden rounded-md "
             />
           </div>
 
@@ -35,6 +35,7 @@ function DataAnalysisForm() {
             <h1 className="text-white font-bold text-xl">
               Select your analysis
             </h1>
+
             <div className="flex flex-wrap justify-start mx-auto gap-x-3 gap-y-3">
               <div
                 onClick={() => SetOption1(!Option1)}
@@ -116,6 +117,7 @@ function DataAnalysisForm() {
               </div>
             </div>
           </div>
+
           <div className="my-4 flex flex-col gap-y-4 px-12 ">
             {" "}
             <button
