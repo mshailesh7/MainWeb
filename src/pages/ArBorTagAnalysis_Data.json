@@ -2,57 +2,57 @@
   "sections": [
     {
       "title": "Average Width: ",
-      "image": "src/Asset/rs=w_600,h_600,cg_true_1.jpg",
+      "image": "src/Asset/AverageWidth.png",
       "text": {
         "title": "Average Width: ",
-        "paragraphs": [
-          "This analysis presents the average tree widths for each species. To calculate these averages, the total width of all trees within a species is divided by the number of trees, providing an estimated average width for each species.This allows us to understand how consistent the widths are for each species and visualise any outliers that are thicker or thinner than the rest."
-        ]
-      }
-    },
-    {
-      "title": "Average Height",
-      "image": "src/Asset/rs=w_600,h_600,cg_true_2.jpg",
-      "text": {
-        "title": "Carbon Sequestration Heatmap",
-        "paragraphs": [
-          "This analysis provides the average tree heights for each species. To calculate these averages, the total height of all trees within a species is divided by the number of trees, providing an estimated average height for each species. This allows us to understand how consistent the heights are for each species and visualise any outliers that are taller or shorter than the rest. "
-        ]
-      }
-    },
-    {
-      "title": "Species Diversity",
-      "image": "src/Asset/rs=w_600,h_451,cg_true_3.jpg",
-      "text": {
-        "title": "Species Distribution",
-        "paragraphs": [
-          "This visualization offers a detailed overview of the species examined, showing their relative proportions. Each species is represented by a unique colour, and the percentages displayed reflect each species' share of the total composition.This helps us better understand the frequency of certain species found and also helps us understand the number of native and exotic species present.  "
-        ]
-      }
-    },
-    {
-      "title": "Species Distribution",
-      "image": "src/Asset/rs=w_600,h_451,cg_true_4.jpg",
-      "text": {
-        "title": "Average Height",
-        "paragraphs": [
-          "This analysis displays the precise geographic coordinates for each tree species, with each species assigned a unique colour. Due to the exactness of the coordinates, some markers may overlap when trees are located in close proximity to one another.This helps us better understand the spread of certain species across a given area. This analysis also helps us understand the distribution of each species and how widely they are found within the region."
-        ]
-      }
-    },
-    {
-      "title": "Average Width",
-      "image": "src/Asset/rs=w_600,h_451,cg_true_5.jpg",
-      "text": {
-        "title": "Our Philosophy",
         "paragraphs": [
           "This graph depicts the average width of the trees for each of the species. The total width of the tree for each of the species is taken and divided by the total number of trees for that specific species to determine an average width estimate. It also shows the thickest and slimest tree."
         ]
       }
     },
     {
+      "title": "Average Height",
+      "image": "src/Asset/AverageHeight.png",
+      "text": {
+        "title": "Carbon Sequestration Heatmap",
+        "paragraphs": [
+          "This gives a detailed graph showing the average height of the trees for each species. The total height of the tree for each species is taken and divided by the total number of trees for that particular species to determine a height estimate.  It also shows the tallest tree and also the shortest tree. "
+        ]
+      }
+    },
+    {
+      "title": "Species Diversity",
+      "image": "src/Asset/SpeciesDiversity.png",
+      "text": {
+        "title": "Species Distribution",
+        "paragraphs": [
+          "This image is a geo-coordinate map that shows the exact coordinates for each of the trees and the corresponding species colour coded.  Each colour-coded dot is unique to each colour-coded tree species in the legend."
+        ]
+      }
+    },
+    {
+      "title": "Species Distribution",
+      "image": "src/Asset/SpeciesDistribution.png",
+      "text": {
+        "title": "Average Height",
+        "paragraphs": [
+          "This is a pie chart that depicts a detailed breakdown of all the species in the dataset and their total percentage.  Each Colour in the chart represents its corresponding species in the figure legend. The percentage values show how much of the total that specific species takes up on the pie. The most abundant and the least abundant species are also depicted."
+        ]
+      }
+    },
+    {
+      "title": "Carbon Sequestration Heatmap",
+      "image": "src/Asset/HeatMap.png",
+      "text": {
+        "title": "Our Philosophy",
+        "paragraphs": [
+          "This image is a geo-coordinate map that depicts a heatmap shows the level of carbon sequestered by each tree. As the scale above shows, the lower the ability of the tree to sequester carbon the closer it is to yellow which is the lower range. The more efficient the tree is at sequestering carbon the closer it is to dark green. The tree which the highest carbon sequestering portential and the lowest is both depected."
+        ]
+      }
+    },
+    {
       "title": "Carbon Sequestration",
-      "image": "src/Asset/rs=w_600,h_800,cg_true_6.jpg",
+      "image": "src/Asset/HeatMap.png",
       "text": {
         "title": "Key Statistics",
         "paragraphs": [
@@ -62,7 +62,7 @@
     },
     {
       "title": "Key Statistics",
-      "image": "src/Asset/rs=w_600,h_800,cg_true_6.jpg",
+      "image": "src/Asset/KeyStatistics.png",
       "text": {
         "title": "Key Statistics",
         "paragraphs": [

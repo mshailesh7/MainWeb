@@ -1,43 +1,18 @@
 import { Link } from "react-router-dom";
-import TextImageComponent from "../Components/ArborTagAnalysis_Components/ArborTagAnalysis_TextImageComponent";
 import ArBorTagAnalysis_Data from "./ArBorTagAnalysis_Data.json";
 import { FaMagnifyingGlass } from "react-icons/fa6";
 import { useState } from "react";
-
+import LandingPage from "../Components/ArborTagAnalysis_Components/Landing_Page/LandingPage";
+import CardCollection from "../Components/ArborTagAnalysis_Components/Landing_Page/CardCollection";
+import GetInTouchForm from "../Components/ArborTagAnalysis_Components/Landing_Page/GetInTouchForm";
 const AiborTagAnalysis = () => {
   const [ShowForm, SetShowForm] = useState(false);
 
   return (
-    <div
-      className={`m-20 mx-auto w-10/12 flex flex-col space-y-8 ${
-        ShowForm ? "justify-center h-screen" : null
-      }`}
-    >
-      <h1 className="text-4xl md:text-4xl text-center font-bold my-8 flex flex-col gap-y-8">
-        <span className="underline underline-offset-4" draggable>
-          {ShowForm
-            ? "Please Upload Your CSV File"
-            : "GREEN CREDIT WEB ANALYSIS"}
-        </span>
-      </h1>
-      <div className="flex flex-col gap-y-10">
-        {ArBorTagAnalysis_Data.sections.map((section, index) => (
-          <div
-            key={index}
-            className={`transition duration-500 ease-in-out transform ${
-              index % 2 ? "hover:-translate-x-2" : "hover:translate-x-2"
-            }`}
-          >
-            <TextImageComponent
-              text={section.text}
-              image={section.image}
-              imageFirst={index % 2 === 0}
-              index={index}
-            />
-          </div>
-        ))}
-      </div>
-      )
+    <div className="mt-20 h-screen flex flex-col justify-between ">
+      <LandingPage />
+      <CardCollection />
+      <GetInTouchForm />
     </div>
   );
 };

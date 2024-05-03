@@ -25,7 +25,6 @@ function App() {
         <Route path="ArborTagAnalysis" element={<ArborTagAnalysis />} />
         <Route path="/UploadAnalysis" element={<UploadAnalysisForm />} />
       </Routes>
-      <Footer />
     </Router>
   );
 }
