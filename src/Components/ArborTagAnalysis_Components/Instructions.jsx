@@ -4,11 +4,11 @@ import { MdIntegrationInstructions, MdOutlineIntegrationInstructions } from "rea
 
 export default function Instructions({ SetShowForm }) {
   return (
-    <div className="flex flex-col mx-auto w-full max-w-4xl px-4 h-screen">
-      <h1 className="text-center text-3xl font-bold text-white mb-8">
+    <div className="flex flex-col justify-center items-center mx-auto w-full max-w-4xl px-4 ">
+      <h1 className="text-center text-3xl font-bold text-white mb-4">
         Instructions for Uploading Your Data Files
       </h1>
-      <p className="text-lg text-black mb-4">
+      <p className="text-lg text-white self-center mb-4">
         Before uploading your data file, please ensure it meets the following criteria for a smooth and efficient processing experience:
       </p>
       <div className="bg-white shadow-md rounded-lg p-6">
