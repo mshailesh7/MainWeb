@@ -2,14 +2,14 @@ import React from "react";
 import Card from "./Card";
 import ArBorTagAnalysis_Data from "../../../pages/ArBorTagAnalysis_Data.json";
 import { Link } from "react-router-dom";
+
 function CardCollection() {
   return (
-    <div className="my-8 flex flex-col mx-auto ">
-      {" "}
-      <h1 className="text-center my-12 text-xl font-semibold">
-        Explore the power of Your Data
+    <div id="card-collection" className="my-12 px-4">
+      <h1 className="text-center my-8 text-4xl font-bold uppercase">
+        Explore the Power of Your Data!
       </h1>
-      <div className="flex gap-x-12 justify-center gap-y-8 hover:cursor-pointer flex-wrap ">
+      <div className="flex flex-wrap justify-center gap-4">
         {ArBorTagAnalysis_Data.sections.map((item, index) => (
           <Card
             key={index}
@@ -19,13 +19,15 @@ function CardCollection() {
           />
         ))}
       </div>
-      <h1 className="mx-auto my-16 text-2xl font-serif">
-        Ready to Unlock Insights?{" "}
-        <Link to="/UploadAnalysis" className="text-blue-500">
-          Click Here
-        </Link>{" "}
-        to Analyze Your Data Now!
-      </h1>
+      <div className="flex flex-wrap justify-center">
+        <h1 className="text-center bg-blue-400 text-3xl py-5 px-5 font-serif font-bold mt-10 mb-10">
+          Ready to Unlock Insights?{" "}
+          <Link to="/UploadAnalysis" className="text-red-800 hover:text-red-600 underline">
+            Click Here
+          </Link>{" "}
+          to Analyze Your Data Now!
+        </h1>
+      </div>
     </div>
   );
 }

@@ -7,7 +7,7 @@ import ContactUs from "./pages/ContactUs";
 import AboutUs from "./pages/AboutUs";
 import ForgotPassword from "./pages/ForgotPassword";
 import Home from "./pages/Home";
-import AirborTag from "./pages/ArborTag";
+import ArborTag from "./pages/ArborTag";
 import ArborTagAnalysis from "./pages/ArborTagAnalysis";
 import UploadAnalysisForm from "./Components/ArborTagAnalysis_Components/UploadAnalysisForm";
 function App() {
@@ -21,10 +21,11 @@ function App() {
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/Contact" element={<ContactUs />} />
         <Route path="/forgot-password" element={<ForgotPassword />} />
-        <Route path="/ArborTag" element={<AirborTag />} />
+        <Route path="/ArborTag" element={<ArborTag />} />
         <Route path="ArborTagAnalysis" element={<ArborTagAnalysis />} />
         <Route path="/UploadAnalysis" element={<UploadAnalysisForm />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }

@@ -1,33 +1,25 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { useState } from "react";
+import React, { useState } from "react";
+
 function Card({ title, image, text }) {
-  const [Showpara, SetShowPara] = useState(false);
-  const [FullText, SetFullText] = useState(false);
-  let Compressed_Text = text[0].substring(0, 200);
+  const [showParagraph, setShowParagraph] = useState(false);
+  const fullText = text.join(" ");
+  const compressedText = fullText.substring(0, 300) + "...";
+
   return (
     <div
-      className=" hover:scale-95 transition-all duration-500 hover:-backdrop-hue-rotate-180 w-3/12 hover:skew-12 flex flex-col gap-y-4 max-md:w-7/12 max-mds:9/12 max-sm:w-11/12"
-      onMouseEnter={() => SetShowPara(true)}
-      onMouseLeave={() => SetShowPara(false)}
+      className="relative overflow-hidden shadow-lg rounded-lg cursor-pointer
+                 transition duration-500 ease-in-out transform hover:scale-105
+                 m-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4"
+      onMouseEnter={() => setShowParagraph(true)}
+      onMouseLeave={() => setShowParagraph(false)}
     >
-      {!Showpara ? (
-        <>
-          <img className="rounded-md h-64 w-full" src={image} alt="" />
-          <div className="flex justify-between px-1">
-            <div className="font-bold text-xl my-auto text-center mx-auto">
-              {title}
-            </div>
-          </div>
-        </>
-      ) : (
-        <>
-          <div className="px-1 py-3">{text}</div>
-          <div className="flex justify-between px-1">
-            <div className="font-bold text-xl my-auto mx-auto">{title}</div>
-          </div>
-        </>
-      )}
+      <img className="rounded-t-lg w-full h-80 object-cover" src={image} alt={title} />
+      <div className="p-4 bg-white rounded-b-lg">
+        <h5 className="text-lg font-bold flex justify-center text-gray-900">{title}</h5>
+        <p className="text-sm text-gray-700 mt-2">
+          {showParagraph ? fullText : compressedText}
+        </p>
+      </div>
     </div>
   );
 }

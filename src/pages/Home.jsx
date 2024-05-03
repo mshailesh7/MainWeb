@@ -29,7 +29,7 @@ const PhotoGallery = () => (
   </div>
 );
 
-const Footer = () => (
+const LatestUpdates = () => (
   <footer className="bg-gray-900 py-12 text-white">
     <div className="container mx-auto px-4">
       <h2 className="text-4xl font-bold text-center underline decoration-green-600 underline-offset-8 mb-4">
@@ -135,7 +135,7 @@ const Home = () => (
     <AboutUs />
 
     <PhotoGallery />
-    <Footer />
+    <LatestUpdates />
   </div>
 );
 

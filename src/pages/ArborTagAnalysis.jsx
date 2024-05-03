@@ -4,12 +4,12 @@ import { FaMagnifyingGlass } from "react-icons/fa6";
 import { useState } from "react";
 import LandingPage from "../Components/ArborTagAnalysis_Components/Landing_Page/LandingPage";
 import CardCollection from "../Components/ArborTagAnalysis_Components/Landing_Page/CardCollection";
-import GetInTouchForm from "../Components/ArborTagAnalysis_Components/Landing_Page/GetInTouchForm";
-const AiborTagAnalysis = () => {
+import GetInTouchForm from "../Components/ArborTagAnalysis_Components/Landing_Page/LatestUpdates";
+const ArborTagAnalysis = () => {
   const [ShowForm, SetShowForm] = useState(false);
 
   return (
-    <div className="mt-20 h-screen flex flex-col justify-between ">
+    <div className="mt-20 flex flex-col justify-between ">
       <LandingPage />
       <CardCollection />
       <GetInTouchForm />
@@ -17,4 +17,4 @@ const AiborTagAnalysis = () => {
   );
 };
 
-export default AiborTagAnalysis;
+export default ArborTagAnalysis;

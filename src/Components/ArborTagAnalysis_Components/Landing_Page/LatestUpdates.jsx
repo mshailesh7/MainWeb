@@ -1,8 +1,8 @@
 import { FaLinkedin, FaFacebook, FaInstagram } from "react-icons/fa";
-const GetInTouchForm = () => (
+const LatestUpdates = () => (
   <footer className="bg-gray-900 py-12 text-white">
     <div className="container mx-auto px-4">
-      <h2 className="text-4xl font-bold text-center underline decoration-green-600 underline-offset-8">
+      <h2 className="text-4xl font-bold text-center underline decoration-green-600 underline-offset-8 mb-4">
         Get Latest Updates
       </h2>
       <p className="mt-6 max-w-lg mx-auto text-center text-lg">
@@ -61,4 +61,4 @@ const GetInTouchForm = () => (
   </footer>
 );
 
-export default GetInTouchForm;
+export default LatestUpdates;

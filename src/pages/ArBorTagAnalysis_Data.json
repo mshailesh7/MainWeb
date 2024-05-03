@@ -1,7 +1,7 @@
 {
   "sections": [
     {
-      "title": "Average Width: ",
+      "title": "Average Width ",
       "image": "src/Asset/AverageWidth.png",
       "text": {
         "title": "Average Width: ",
@@ -47,16 +47,6 @@
         "title": "Our Philosophy",
         "paragraphs": [
           "This image is a geo-coordinate map that depicts a heatmap shows the level of carbon sequestered by each tree. As the scale above shows, the lower the ability of the tree to sequester carbon the closer it is to yellow which is the lower range. The more efficient the tree is at sequestering carbon the closer it is to dark green. The tree which the highest carbon sequestering portential and the lowest is both depected."
-        ]
-      }
-    },
-    {
-      "title": "Carbon Sequestration",
-      "image": "src/Asset/HeatMap.png",
-      "text": {
-        "title": "Key Statistics",
-        "paragraphs": [
-          "This analysis uses a heatmap to depict the amount of carbon dioxide each tree can sequester, calculated using a scientific formula. Each tree's CO2 sequestration capability is represented by colour intensity on the heatmap; lighter colours indicate lower sequestration abilities, while darker colours denote higher efficiency in removing CO2 from the atmosphere.This helps us determine the types of trees that are best at sequestering carbon allowing us to further use these trees more frequently during plantation efforts. This analysis also helps us identify key spots within the given area that might need afforestation efforts to help improve carbon sequestration."
         ]
       }
     },

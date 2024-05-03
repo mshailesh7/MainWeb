@@ -1,124 +1,50 @@
-import { Link, useSearchParams } from "react-router-dom";
-import { IoCloudUpload } from "react-icons/io5";
-import { FaFileUpload } from "react-icons/fa";
-import DataAnalysisForm from "./DataAnalysisForm";
-import {
-  MdIntegrationInstructions,
-  MdOutlineIntegrationInstructions,
-} from "react-icons/md";
+import { Link } from "react-router-dom";
+import { IoCloudUpload } from "react-icons/io5"; 
+import { MdIntegrationInstructions, MdOutlineIntegrationInstructions } from "react-icons/md";
+
 export default function Instructions({ SetShowForm }) {
   return (
-    <>
-      <div className="flex flex-col my-36 w-5/12 max-md:w-11/12 max-mdm:w-10/12 max-sm:w-9/12 max-2xl:w-7/12 mx-auto h-screen gap-y-2">
-        <div className="font-bold text-2xl">
-          Instructions for Uploading Your Data Files
-        </div>
-        <div className="">
-          Before Uploading Your data File. Please ensure that it meets the
-          following criteria to ensure a smooth and efficient processing
-          experience:
-        </div>
-        <div className="flex gap-x-2 justify-start ">
-          •
-          <h1 className=" font-bold">
-            Required Data Collection:{" "}
-            <span className=" font-normal">
-              Your data should be organized into the following columns in the
-              specified order
-            </span>
-          </h1>
-        </div>
-        <div className="px-4 py-4">
-          {" "}
-          <ul className=" font-bold">
-            Location:{" "}
-            <span className=" font-normal">
-              The specific location where the data was collected
-            </span>
-          </ul>
-          <h1 className=" font-bold">
-            Date:{" "}
-            <span className=" font-normal">
-              The date when data was collected.
-            </span>
-          </h1>
-          <h1 className=" font-bold">
-            Scietific Name:{" "}
-            <span className=" font-normal">
-              The specific name of the species was observed.
-            </span>
-          </h1>
-          <h1 className=" font-bold">
-            Height:{" "}
-            <span className=" font-normal">
-              The height of the plant or tree measured (in meters).
-            </span>
-          </h1>
-          <h1 className=" font-bold">
-            Width:{" "}
-            <span className=" font-normal">
-              The width of the plant or tree at its widest point (in meters).
-            </span>
-          </h1>
-          <h1 className=" font-bold">
-            Diameter:{" "}
-            <span className=" font-normal">
-              The diameter of the stem or trunk (in centimeters){" "}
-            </span>
-          </h1>
-          <h1 className=" font-bold">
-            Carbon Seq.:{" "}
-            <span className=" font-normal">
-              The amount of carbon sequestation (in kilometers or appropriate
-              unit)
-            </span>
-          </h1>
-          <h1 className=" font-bold">
-            Latitude:{" "}
-            <span className=" font-normal">
-              The latitude of the loction where the data was collected.
-            </span>
-          </h1>
-          <h1 className=" font-bold">
-            Longitude:{" "}
-            <span className=" font-normal">
-              The longitude of the location where the data was collected.
-            </span>
-          </h1>
-        </div>
-        <div className="flex gap-x-1">
-          •
-          <h1 className=" font-bold">
-            File Format:{" "}
-            <span className=" font-normal">
-              The data must be exported or uploaded as a.csv (Comma Seperated
-              Values) file. Ensure your file has file extention .csv to be
-              accepted by our system.
-            </span>
-          </h1>
-        </div>
-        <div className="flex gap-x-2">
-          •
-          <h1 className=" font-bold">
-            File Template:{" "}
-            <span className=" font-normal">
-              To help you format your data correctly, we have provided a
-              downloadable template. Please use this template to ensure that
-              your data meets your requirements.
-            </span>
-          </h1>
-        </div>
+    <div className="flex flex-col mx-auto w-full max-w-4xl px-4 h-screen">
+      <h1 className="text-center text-3xl font-bold text-white mb-8">
+        Instructions for Uploading Your Data Files
+      </h1>
+      <p className="text-lg text-black mb-4">
+        Before uploading your data file, please ensure it meets the following criteria for a smooth and efficient processing experience:
+      </p>
+      <div className="bg-white shadow-md rounded-lg p-6">
+        <ul className="list-disc list-inside space-y-4 text-gray-700">
+          <li>
+            <strong>Required Data Collection:</strong> Your data should be organized into the following columns in the specified order:
+            <ul className="pl-4 mt-2">
+              <li><strong>Location:</strong> The specific location where the data was collected.</li>
+              <li><strong>Date:</strong> The date when data was collected.</li>
+              <li><strong>Scientific Name:</strong> The specific name of the species observed.</li>
+              <li><strong>Height:</strong> The height of the plant or tree measured (in meters).</li>
+              <li><strong>Width:</strong> The width of the plant or tree at its widest point (in meters).</li>
+              <li><strong>Diameter:</strong> The diameter of the stem or trunk (in centimeters).</li>
+              <li><strong>Carbon Seq.:</strong> The amount of carbon sequestration (use appropriate units).</li>
+              <li><strong>Latitude:</strong> The latitude of the location where the data was collected.</li>
+              <li><strong>Longitude:</strong> The longitude of the location where the data was collected.</li>
+            </ul>
+          </li>
+          <li>
+            <strong>File Format:</strong> The data must be exported or uploaded as a .csv (Comma Separated Values) file. Ensure your file has the file extension .csv to be accepted by our system.
+          </li>
+          <li>
+            <strong>File Template:</strong> To help you format your data correctly, we have provided a downloadable template. Please use this template to ensure your data meets our requirements.
+          </li>
+        </ul>
+      </div>
+      <div className="mt-8 text-center">
         <Link
-          to="#_"
+          to="/UploadAnalysis"
           onClick={() => SetShowForm(true)}
-          class="w-fit flex justify-center my-2 px-8 py-2 gap-x-2 mb-2 text-lg text-white bg-green-500 rounded-md hover:bg-green-400 mx-auto"
-          data-primary="green-400"
-          data-rounded="rounded-2xl"
-          data-primary-reset="{}"
+          className="inline-flex items-center justify-center px-6 py-3 gap-2 text-lg text-white bg-green-600 rounded-md hover:bg-green-700 transition duration-300 ease-in-out"
         >
-          <MdIntegrationInstructions className="my-auto" /> Close Instructions
+          <IoCloudUpload className="text-2xl" />
+          Close Instructions and Upload Data
         </Link>
       </div>
-    </>
+    </div>
   );
 }
