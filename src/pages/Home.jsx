@@ -9,6 +9,61 @@ import {
   FaUserPlus,
 } from "react-icons/fa";
 
+import logo1 from "../Asset/Branding/logo1.png"
+import logo2 from "../Asset/Branding/logo2.png"
+import logo3 from "../Asset/Branding/logo3.png"
+import logo4 from "../Asset/Branding/logo4.png"
+import logo5 from "../Asset/Branding/logo5.png"
+import logo6 from "../Asset/Branding/logo6.png"
+import logo7 from "../Asset/Branding/logo7.png"
+import logo8 from "../Asset/Branding/logo8.png"
+import logo9 from "../Asset/Branding/logo9.png"
+import logo10 from "../Asset/Branding/logo10.png"
+import logo11 from "../Asset/Branding/logo11.png"
+import logo12 from "../Asset/Branding/logo12.png"
+import BrandingImagesGrid from "../Components/Home/BrandingImagesGrid.jsx";
+
+const images = [
+  {
+    "url": logo1
+  },
+  {
+    "url": logo2
+  },
+  {
+    "url": logo3
+  },
+  {
+    "url": logo4
+  },
+  {
+    "url": logo5
+  },
+  {
+    "url": logo6
+  },
+  {
+    "url": logo7
+  },
+  {
+    "url": logo8
+  },
+  {
+    "url": logo9
+  },
+  {
+    "url": logo10
+  },
+  {
+    "url": logo11
+  },
+  {
+    "url": logo12
+  },
+  
+]
+
+
 const PhotoGallery = () => (
   <div className="bg-white mt-10 py-8">
     <div className="container mx-auto">
@@ -135,6 +190,7 @@ const Home = () => (
     <AboutUs />
 
     <PhotoGallery />
+    <BrandingImagesGrid images={images} />
     <LatestUpdates />
   </div>
 );
